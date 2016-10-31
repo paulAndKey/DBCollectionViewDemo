@@ -9,18 +9,19 @@
 #import "BaseViewController.h"
 
 @interface BaseViewController ()<UITableViewDelegate,UITableViewDataSource>
+
 @property (nonatomic , strong) UITableView * tableView;
 @property (nonatomic , strong) NSArray * titleArray;
+
 @end
 
 @implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"DBCollctionView";
-    self.titleArray = @[@"瀑布流",@"防电商app首页",@"卡片滚动"];
+    self.titleArray = @[@"瀑布流",@"防电商app首页",@"卡片3D滚动"];
     [self initTableView];
 }
 

@@ -46,33 +46,31 @@ static const CGFloat sectionHeaderHight = 35;
 }
 
 /**
- 返回cell的所有布局属性
+ 返回rect中的所有布局属性
  */
 -(NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
-    return [self.attributesArray filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(UICollectionViewLayoutAttributes *evaluatedObject, NSDictionary *bindings){
-        return CGRectIntersectsRect(rect, [evaluatedObject frame]);
-    }]];
+    return self.attributesArray;
 }
 
-//返回值控制指定分区的页眉页脚控件的大小和位置等布局信息
--(UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:kind withIndexPath:indexPath];
-    return attributes;
-}
-//返回值控制指定分区的装饰控件的大小和位置等布局信息
--(UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString *)decorationViewKind atIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewLayoutAttributes *attributes = [[UICollectionViewLayoutAttributes alloc] init];
-    return attributes;
-}
+////返回值控制指定分区的页眉页脚控件的大小和位置等布局信息
+//-(UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+//{
+//    UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:kind withIndexPath:indexPath];
+//    return attributes;
+//}
+////返回值控制指定分区的装饰控件的大小和位置等布局信息
+//-(UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString *)decorationViewKind atIndexPath:(NSIndexPath *)indexPath
+//{
+//    UICollectionViewLayoutAttributes *attributes = [[UICollectionViewLayoutAttributes alloc] init];
+//    return attributes;
+//}
 
 
-//返回控制指定NSIndexthPath对应的单元格的大小和位置等布局信息
--(UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return self.attributesArray[indexPath.item];
-}
+////返回控制指定NSIndexthPath对应的单元格的大小和位置等布局信息
+//-(UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return self.attributesArray[indexPath.item];
+//}
 
 
 //广告滚动图

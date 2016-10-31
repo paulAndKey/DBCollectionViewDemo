@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		895744EB1DC193D000461706 /* Card3DCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 895744EA1DC193D000461706 /* Card3DCollectionViewFlowLayout.m */; };
+		895744F31DC1BE2E00461706 /* CardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 895744F21DC1BE2E00461706 /* CardCollectionViewCell.m */; };
 		89DE76A21DC081C3004CA4F1 /* HomePageCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE769C1DC081C3004CA4F1 /* HomePageCollectionFlowLayout.m */; };
 		89DE76A41DC081C3004CA4F1 /* UICollectionViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE76A01DC081C3004CA4F1 /* UICollectionViewHeaderView.m */; };
 		89DE76A81DC081F1004CA4F1 /* DBCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE76A71DC081F1004CA4F1 /* DBCollectionViewFlowLayout.m */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		895744E91DC193D000461706 /* Card3DCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card3DCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		895744EA1DC193D000461706 /* Card3DCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card3DCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		895744F11DC1BE2E00461706 /* CardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewCell.h; sourceTree = "<group>"; };
+		895744F21DC1BE2E00461706 /* CardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewCell.m; sourceTree = "<group>"; };
 		89DE769B1DC081C3004CA4F1 /* HomePageCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageCollectionFlowLayout.h; sourceTree = "<group>"; };
 		89DE769C1DC081C3004CA4F1 /* HomePageCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageCollectionFlowLayout.m; sourceTree = "<group>"; };
 		89DE769F1DC081C3004CA4F1 /* UICollectionViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewHeaderView.h; sourceTree = "<group>"; };
@@ -108,6 +114,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		895744E81DC193D000461706 /* 卡片3D */ = {
+			isa = PBXGroup;
+			children = (
+				895744E91DC193D000461706 /* Card3DCollectionViewFlowLayout.h */,
+				895744EA1DC193D000461706 /* Card3DCollectionViewFlowLayout.m */,
+				895744F11DC1BE2E00461706 /* CardCollectionViewCell.h */,
+				895744F21DC1BE2E00461706 /* CardCollectionViewCell.m */,
+			);
+			path = "卡片3D";
+			sourceTree = "<group>";
+		};
 		89DE76981DC081C3004CA4F1 /* 电商首页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,10 +187,11 @@
 		89DF4D601DBF0BA000FC7F49 = {
 			isa = PBXGroup;
 			children = (
-				89DE76C31DC08513004CA4F1 /* CycleScrollView */,
-				89DE76A91DC08269004CA4F1 /* controllers */,
 				89DE76A51DC081F1004CA4F1 /* 瀑布流 */,
 				89DE76981DC081C3004CA4F1 /* 电商首页 */,
+				895744E81DC193D000461706 /* 卡片3D */,
+				89DE76C31DC08513004CA4F1 /* CycleScrollView */,
+				89DE76A91DC08269004CA4F1 /* controllers */,
 				89DF4D6B1DBF0BA000FC7F49 /* DBCollectionView */,
 				89DF4D851DBF0BA000FC7F49 /* DBCollectionViewTests */,
 				89DF4D901DBF0BA000FC7F49 /* DBCollectionViewUITests */,
@@ -365,9 +383,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89DE76B31DC08269004CA4F1 /* ViewController.m in Sources */,
+				895744F31DC1BE2E00461706 /* CardCollectionViewCell.m in Sources */,
 				89DF4D711DBF0BA000FC7F49 /* AppDelegate.m in Sources */,
 				89DE76C91DC08513004CA4F1 /* NSTimer+Addition.m in Sources */,
 				89DE76BB1DC08304004CA4F1 /* BannerCollectionViewCell.m in Sources */,
+				895744EB1DC193D000461706 /* Card3DCollectionViewFlowLayout.m in Sources */,
 				89DE76B21DC08269004CA4F1 /* BaseViewController.m in Sources */,
 				89DE76A41DC081C3004CA4F1 /* UICollectionViewHeaderView.m in Sources */,
 				89DE76A81DC081F1004CA4F1 /* DBCollectionViewFlowLayout.m in Sources */,

@@ -41,7 +41,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [@[@"1",@"1",@"3",@"8"][section] intValue];
+    return [@[@"1",@"1",@"3",@"7"][section] intValue];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
